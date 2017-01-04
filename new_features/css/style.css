@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+header, footer {
+        height: 200px;
+        background-color: #ccc;
+        color: white;
+        padding: 10px;
+}
+	
+article, nav, aside {
+        height: 100px;
+        background: red;
+        border: 1px white solid;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul, ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+.tresc {
+  height: 300px;  
+}
+
+img{
+    width: 100px;
+    height: 100px;
+}
+
+/* FlexBox */
+.kontener-flex {
+        display: flex;
+}
+    
+aside {
+        flex: 1;
+}
+    
+article {
+        flex: 2;
+}
+    
+nav {
+        flex: 1;
+        order: -1;
+}
+
+/* Multicolumn */
+p.column {
+    -webkit-column-count: 3; 
+    -webkit-column-gap: 50px;
+    -webkit-column-rule: 1px solid #f1f1f1; 
+}
+
+/* Shapes - Chrome*/
+.shape2{
+    shape-outside: circle(50%);
+    clip-path: circle(50%);
+    float: left;
+    width: 140px;
+    height: 140px;
+    background-image: url(../img/shape.png);
+    background-size: cover;
+}
+
+.container {
+  overflow: hidden;
+  width: 1200px;
+  margin: 50px auto;
+  background-color: white;
+}
+
+.shape1{
+    shape-outside: circle(50%);
+    float: right;
+    width: 90px;
+    height:90px;
+}
+
+.pull-quote{
+  shape-outside: content-box;
+  float: left;
+}
+
+.shape3{
+    width: 30%;
+    text-align:center;
+}
+
+#float-left {
+      shape-outside: polygon(0 0, 100% 100%, 0 100%);
+      float: left;
+      width: 40%;
+      height: 12ex;
+    }
+
+#float-right {
+      shape-outside: polygon(100% 0, 100% 100%, 0 100%);
+      float: right;
+      width: 40%;
+      height: 12ex;
+}
+
+
+/* Exclusions - tylko n IE*/
+.wykluczenie {
+        -ms-wrap-flow: both;
+        -ms-wrap-margin: 10px;
+        position: absolute;
+        top: 700px;
+        left: 200px;
+}
+
+/* Regions - tylko na IE*/
+.zawartosc {
+    -webkit-flow-into: regiony;
+}
+
+.region {
+    -webkit-flow-from: regiony;
+    width: 20%;
+    height: 200px;
+    float: left;
+    padding: 10px;        
+}
+
+
+
+/*article {
+    flow-into: article-flow;
+  }
+  .region {
+    flow-from: article-flow;
+  }
+  .top {
+    max-height: 80vh;
+  }*/
+
+
