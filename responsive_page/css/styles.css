@@ -1,0 +1,82 @@
+body, html{
+	margin: 0;
+	padding: 0;
+}
+
+ul, ol{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+}
+
+body{
+	background-color: #EBF2B3;
+}
+
+/* kolory */
+.jasnyZolty {
+    color: #EBF2B3
+}
+
+.ciemnyZolty{
+    color: #E5F280
+}
+
+.jasnyZielony{
+    color: #7FBF3F
+}
+
+.zielony {
+    color: #518C27
+}
+
+.ciemnyZielony{
+    color: #325920;
+}
+
+
+header{
+	position: relative;
+
+	background-image: url('../img/bg1.jpg');
+	-webkit-background-size: cover;
+	background-size: cover;
+
+	padding-bottom: 46%;
+}
+
+header .center{
+	padding-top: 50px;
+	position: relative;
+	z-index: 1000;
+}
+
+header .menu{
+	background-color: #325920;
+	border-radius: 5px;
+	overflow: hidden;
+    margin: 10px;
+}
+
+
+header .menu ul{
+	display: table;
+	width: 100%;
+}
+
+header .menu ul li{
+	display: table-cell;
+}
+
+header .menu ul li a{
+	color: #EBF2B3;
+	height: 50px;
+	line-height: 50px;
+	display: block;
+	padding: 0 10px;
+	text-align: center;
+}
