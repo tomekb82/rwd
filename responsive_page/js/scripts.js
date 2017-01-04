@@ -50,6 +50,46 @@
         
         })();
 
+        (function(){
+			
+			var $slider = $('.section2 .slider');
+			var $slidesContainer = $slider.find('.slides-container');
+			var $slides = $slidesContainer.children();
+			var $pagination = $slider.find('.pagination');
+			
+			var slidesCount = $slides.size();
+            
+            console.log(slidesCount);
+
+			$pagination.empty();
+			for(var i=0; i<slidesCount; i++){
+				$pagination.append($('<li><span>'));
+			}
+			var $paginationItems = $pagination.find('li');
+
+			$slidesContainer.css({
+				'width': (slidesCount*100+'%'),
+				'margin-left': '0%'
+			});
+
+			$slides.css('width', ((100/slidesCount)+'%'));
+
+			$paginationItems.click(function(e){
+				e.preventDefault();
+
+				var $this = $(this);
+				$pagination.find('li').removeClass('active');
+				$this.addClass('active');
+
+				var index = $this.index();
+
+				var newPost = (index*-100);
+	
+				$slidesContainer.animate({'margin-left': (newPost+'%')}, 'slow');
+			}).first().click();
+
+		
+		})();
 
 	});
 })(jQuery); 
