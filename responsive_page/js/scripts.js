@@ -2,6 +2,9 @@
 	$(document).ready(function(){
     
 		(function(){
+            var $smallMenuIcon = $('.small-menu .icon-menu');
+            var $smallMenu = $('.small-menu .icon-menu-list');
+            
 			var $bgSlider = $('header .bg-slider');
 			var $slides = $bgSlider.find('.bg-slide');
 			var $currSlide = $slides.first();
@@ -32,6 +35,16 @@
 			$currSlide.show();
 
 			$bgSlider.find('.nav').click(updateSlides);
+            
+            var showSmallMenu = true;
+            $smallMenuIcon.click(function(){
+                if(showSmallMenu){
+                    $smallMenu.show();
+                }else{
+                    $smallMenu.hide();
+                }
+                showSmallMenu = !showSmallMenu;
+            });
             
             setInterval(updateSlides, 10000); 
         
