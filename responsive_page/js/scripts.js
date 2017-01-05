@@ -58,9 +58,7 @@
 			var $pagination = $slider.find('.pagination');
 			
 			var slidesCount = $slides.size();
-            
-            console.log(slidesCount);
-
+          
 			$pagination.empty();
 			for(var i=0; i<slidesCount; i++){
 				$pagination.append($('<li><span>'));
@@ -69,7 +67,7 @@
 
 			$slidesContainer.css({
 				'width': (slidesCount*100+'%'),
-				'margin-left': '0%'
+				'margin-left': '0%',
 			});
 
 			$slides.css('width', ((100/slidesCount)+'%'));
