@@ -42,14 +42,14 @@ body{
 header{
 	position: relative;
 
-	background-image: url('../img/bg1.jpg');
+	/*background-image: url('../img/bg1.jpg');
 	-webkit-background-size: cover;
 	background-size: cover;
-
+*/
 	padding-bottom: 46%;
 }
 
-header .center{
+header .ccc{
 	padding-top: 50px;
 	position: relative;
 	z-index: 1000;
@@ -83,6 +83,7 @@ header .center{
 	padding: 0 10px;
 	text-align: center;
     font-size: 22px;
+
 }
 
 .small-menu ul li a{
@@ -91,11 +92,13 @@ header .center{
 	height: 50px;
 	padding: 0 10px;
 	text-align: center;
+    font-size: 20px;
 }
 
 .menu ul li a:hover,
 .small-menu ul li a:hover{
 	background-color: rgba(255, 255, 255, .1);
+    font-weight: bold;
 }
 
 header nav.menu{
@@ -131,13 +134,13 @@ header nav.small-menu{
     display: none;
 }
 
-@media screen and (min-width: 31em){ /* 480px */
+@media screen and (min-width: 61em){ /* 960px */
     nav.small-menu{
         display: none;
     }
 }
 
-@media screen and (max-width: 30em){ /* 480px */
+@media screen and (max-width: 60em){ /* 960px */
     nav.menu{
         display: none;
     }
@@ -251,6 +254,12 @@ header .bg-slider .nav.next{
 
 .center{
 	max-width: 1000px;
+	padding: 0 10px;
+	margin: 0 auto;
+}
+
+.ccc{
+	//max-width: 1000px;
 	padding: 0 10px;
 	margin: 0 auto;
 }
@@ -528,4 +537,258 @@ img{
     #picture2{
         background-image: -webkit-image-set(url('../img/zimbardo.jpg') 1x);
     }
+}
+
+/* Tables */
+
+.jasnyZolty {
+    color: #EBF2B3;
+}
+
+.zolty{
+    color: #E5F280;
+}
+
+.jasnyZielony{
+    color: #7FBF3F;
+}
+
+.zielony {
+    color: #518C27;
+}
+
+.ciemnyZielony{
+    color: #325920;
+}
+
+table{
+    border: 2px solid #7FBF3F;
+    border-radius: 4px;
+    border-collapse: separate;
+    margin-bottom: 15px;
+}
+
+table thead{
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #518C27;
+    color: #EBF2B3;
+}
+
+table tbody tr:nth-child(odd){
+    background-color: #F9F9F9;
+}
+
+table th,
+table td{
+    border-right: 1px solid #7FBF3F;
+    padding: 4px 5px;
+}
+
+table th:last-child,
+table td:last-child{
+    border-right: none;
+}
+
+.hidden-table th,
+.hidden-table td,
+.rotated-table th,
+.rotated-table td,
+.table-to-list th,
+.table-to-list td{
+    text-align: center;
+}
+
+.hidden-table th:nth-child(1),
+.hidden-table td:nth-child(1),
+.rotated-table th:nth-child(1),
+.rotated-table td:nth-child(1),
+.table-to-list th:nth-child(1),
+.table-to-list td:nth-child(1){
+    text-align: center;
+    font-weight: bold;
+}
+
+.hidden-table th:nth-child(2),
+.hidden-table td:nth-child(2){
+    text-align: center;
+}
+
+
+table{
+    width: 100%;
+}
+
+@media screen and (max-width: 64em){
+    .hidden-table th:nth-child(4),
+    .hidden-table th:nth-child(5),
+    .hidden-table td:nth-child(4),
+    .hidden-table td:nth-child(5){
+        display: none;
+    }
+}
+
+@media screen and (max-width: 48em){
+    .hidden-table th:nth-child(7),
+    .hidden-table th:nth-child(8),
+    .hidden-table td:nth-child(7),
+    .hidden-table td:nth-child(8){
+        display: none;
+    }
+}
+
+@media screen and (max-width: 30em){
+    .hidden-table th:nth-child(2),
+    .hidden-table td:nth-child(2){
+        display: none;
+    }
+}
+
+@media screen and (max-width: 20em){
+    .hidden-table th:last-child,
+    .hidden-table td:last-child{
+        display: none;
+    }
+}
+
+/* Reponsive table - flipped */
+
+.flip-scroll table th,
+.flip-scroll table td{
+    border-right: 1px solid #7FBF3F;
+}
+@media screen and (max-width: 64em){
+
+    .rotated-table thead.cf{
+        font-size: 14px;
+    }
+    .rotated-table tbody{
+        font-size: 14px;
+    }
+     /* clear fix */
+    .cf:after {
+        visibility: hidden; 
+        display: block; 
+        font-size: 0; 
+        content: " "; 
+        clear: both; 
+        height: 0; 
+    }
+
+    * html .cf { 
+        zoom: 1; 
+    }
+
+    *:first-child + html .cf { 
+        zoom: 1; 
+    }
+
+
+    /* flip-scroll table */
+    .flip-scroll table{
+        width: 100%;
+        display: block;
+        position: relative;
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+
+    .flip-scroll thead{
+        display: block;
+        float: left;
+    }
+
+    .flip-scroll thead tr{
+        display: block;
+    }
+
+    .flip-scroll th{
+        display: block;
+        text-align: right;
+    }
+
+    .rotated-table th:nth-child(1){
+        text-align: right;
+    }
+    .flip-scroll tbody{
+        display: block;
+        width: auto;
+        position: relative;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .flip-scroll tbody tr{
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .flip-scroll td{
+        display: block;
+        text-align: left;
+    }
+    
+}
+
+@media screen and (max-width: 64em){
+
+    .table-to-list table,
+    .table-to-list thead,
+    .table-to-list tbody,
+    .table-to-list th,
+    .table-to-list td,
+    .table-to-list tr{
+        display: block;
+    }
+
+.table-to-list td:nth-child(1){
+    text-align: left;
+    font-weight: normal;
+}
+    
+    .table-to-list thead tr{
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    .table-to-list tr{
+        border: 1px solid #518C27;
+    }
+
+    .table-to-list td{
+        position: relative;
+        padding-left: 50%;
+        border: none;
+        border-bottom: 1px solid #eee;
+        white-space: normal;
+        text-align: left;
+    }
+
+    .table-to-list td:before{
+        position: absolute;
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+        text-align: left;
+        font-weight: bold;
+
+        content: attr(data-title);
+    }
+}
+
+
+/* Shape */
+
+.symbol-shape{
+    margin-top: 30px;
+    shape-outside: circle(50%);
+    clip-path: circle(50%);
+    float: left;
+    width: 180px;
+    height: 180px;
+    background-image: url(../img/symbol-junga.jpg);
+    background-size: cover;
 }
