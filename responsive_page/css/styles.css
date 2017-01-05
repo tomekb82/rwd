@@ -455,3 +455,77 @@ header .bg-slider .nav.next{
 	width: 100%;
 	height: 100%; 
 }
+
+
+
+@media screen and (max-width: 480px){
+    .bg1{
+        background-image: url('../img/480x285/slide1.jpg');
+    }
+    .bg2{
+        background-image: url('../img/480x285/slide2.jpg');
+    }
+    .bg3{
+        background-image: url('../img/480x285/slide3.jpg');
+    }
+}
+
+@media screen and (min-width: 481px){
+    .bg1{
+        background-image: url('../img/960x570/slide1.jpg');
+    }
+    .bg2{
+        background-image: url('../img/960x570/slide2.jpg');
+    }
+    .bg3{
+        background-image: url('../img/960x570/slide3.jpg');
+    }
+}
+
+@media screen and (min-width: 960px){
+    .bg1{
+        background-image: url('../img/bg1.jpg');
+    }
+    .bg2{
+        background-image: url('../img/bg2.jpg');
+    }
+    .bg3{
+        background-image: url('../img/bg3.jpg');
+    }
+}
+
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+#picture1, #picture2{
+    max-width: 960px;
+    margin: 20px auto;
+    margin-right: 10px;
+}
+
+#picture2{
+    height: 400px;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+@media screen and (max-width: 480px){
+    #picture2{
+        background-image: url('../img/480x285/zimbardo.jpg');
+    }
+}
+
+@media screen and (min-width: 481px){
+    #picture2{
+        background-image: -webkit-image-set(url('../img/960x570/zimbardo.jpg') 1x);
+    }
+}
+@media screen and (min-width: 961px){
+    #picture2{
+        background-image: -webkit-image-set(url('../img/zimbardo.jpg') 1x);
+    }
+}
