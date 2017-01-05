@@ -77,11 +77,12 @@ header .center{
 
 .menu ul li a{
 	color: #EBF2B3;
-	height: 50px;
-	line-height: 50px;
+	height: 80px;
+	line-height: 80px;
 	display: block;
 	padding: 0 10px;
 	text-align: center;
+    font-size: 22px;
 }
 
 .small-menu ul li a{
@@ -215,7 +216,7 @@ header .bg-slider .nav.next{
 
 
 
-.section1{
+.section1, .video-player{
 	background-color: #7FBF3F;
 	border-top: 10px solid #E5F280;
 	border-bottom: 10px solid #E5F280;
@@ -302,7 +303,7 @@ header .bg-slider .nav.next{
 
 /* Section 2 */
 .section2{
-	background-color: #7FBF3F;
+	background-color: #EBF2B3;
 }
 
 .section2 .center{
@@ -367,3 +368,90 @@ header .bg-slider .nav.next{
 	padding: 8px;
 }
 
+.video-player{
+	overflow: hidden;
+}
+
+.video-player h1{
+	font-size: 20px;
+}
+
+/* Semi Fuild Layout*/
+
+/*.video-player .left{
+	float: left;
+	width: 500px;
+}
+
+.video-player .right{
+	margin-left: 520px;
+	width: auto;
+}*/
+
+
+.video-player .left{
+	margin-right: 330px;
+    margin-left: 1%;
+	width: auto;
+}
+
+.video-player .right{
+	width: 300px;
+	float: right;
+}
+
+.video-player .left h1{
+	white-space: nowrap;
+	overflow: hidden;
+	-o-text-overflow: ellipsis;
+	-ms-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+}
+
+.video-player .left p{
+	text-align: justify;
+	font-size: 18px;
+	line-height: 21px;
+}
+
+.video-player .cartoons{
+	background-color: #333;
+    border-radius: 2%;
+    margin-right: 4%;
+}
+
+.video-player .cartoons li{
+	border-bottom: 1px solid #a3a3a3;  
+}
+
+.cartoons li:hover{
+	background-color: rgba(255, 255, 255, .1);
+}
+
+.video-player .cartoons li a{
+	color: #EBF2B3;
+	height: 40px;
+	line-height: 36px;
+	font-size: 16px;
+	display: block;
+	padding: 0 10px;
+}
+
+
+/* Youtube & Video RWD Snippet */
+.fluid-video-wrapper{
+	position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+
+.fluid-video-wrapper iframe,
+.fluid-video-wrapper object,
+.fluid-video-wrapper embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%; 
+}
