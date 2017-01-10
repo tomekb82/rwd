@@ -1,0 +1,20 @@
+
+
+- www:
+
+http://bradfrost.com/blog/web/responsive-nav-patterns/#top
+
+- polecany wzorzec 'The toogle'
+
+- inne wzrorce:
+
+ "left nav flytout' - polecane ale trudna implementacja, szczegolnie na mobile
+
+- konwersja px->em: www.pxtoem.com
+
+- pluginy jQuery dla nawigacji
+
+Sidr -offCanvas
+FlexNav - the toogle
+
+

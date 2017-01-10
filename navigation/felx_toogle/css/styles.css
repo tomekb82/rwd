@@ -1,0 +1,49 @@
+/* colors */
+.blue{
+  color:#9CB3C5;
+}
+
+.lightBlue{
+  color: #C5D6E0;
+}
+
+.darkBlue{
+  color: #759AB0;
+}
+
+.superLightBlue{
+  color: #EDF2F6;
+}
+
+.megaLigthBlue{
+  color:#FEFEFE;
+}
+
+a, a:hover{
+    text-decoration: none;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.menu-button,
+ul.flexnav li  a,
+ul.flexnav li  ul li a {
+	background: #759AB0;	
+}
+
+ul.flexnav li  ul li a {
+	background: #9CB3C5;
+	
+}
+
+ul.flexnav li  a:hover {
+	background: #C5D6E0;
+}

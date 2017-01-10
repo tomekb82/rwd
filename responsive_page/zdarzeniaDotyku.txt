@@ -1,0 +1,35 @@
+
+
+- zdarzenia uruchamiane po dotknięciu ekranu przez użytkownika
+
+touchstart/move/end/enter/leave/cancel
+
+- obiekt zdarzenia dotyku - właściwości:
+
+Type, Target, TOuches
+
+- obiekt dotknięcia ekranu Touch - właściwości:
+
+Identifier
+screenX, sreenY
+target
+
+
+- testy zdarzen na obiekcie canvas
+
+<canvas id="canvas"></cavas>
+
+- biblioteka Hammer.js - gotowe biblioteki js do obslugi zdarzen dotykowych(touch)
+
+obsluguje gesty tap, double tap, swipe, drag, rotate
+
+
+var hammer = Hammer(kontener,{
+  prevent_default: true;
+});
+
+hammer.on('dragleft dragright swipeleft swiperight', function(e){
+
+});
+
+- unikać metody animate() w jquery - duże lagi na urzadzeniach mobile

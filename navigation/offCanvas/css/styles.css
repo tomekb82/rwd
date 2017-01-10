@@ -1,0 +1,167 @@
+
+/* colors */
+.blue{
+  color:#9CB3C5;
+}
+
+.lightBlue{
+  color: #C5D6E0;
+}
+
+.darkBlue{
+  color: #759AB0;
+}
+
+.superLightBlue{
+  color: #EDF2F6;
+}
+
+.megaLigthBlue{
+  color:#FEFEFE;
+}
+
+body{
+    background-color: #FEFEFE;
+
+}
+
+a, a:hover{
+   text-decoration: none; 
+}
+
+
+#outer-wrapper{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+#menu,
+#content{
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+#menu{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 220px;
+    height: 100%;
+    overflow: hidden;
+
+    background-color: #759AB0;
+    border-right: 1px solid #000;
+
+    -webkit-box-shadow:inset -20px 0 20px -20px rgba(0,0,0,1);
+    box-shadow:inset -20px 0 20px -20px rgba(0,0,0,1);
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#menu ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#menu li.header{
+    height: 43px;
+    line-height: 43px;
+    padding-left: 16px;
+    color: #ddd;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    background: #595959;
+    border-top: 1px solid #5e5e5e;
+    border-bottom: 1px solid #000;
+    margin: 0;
+}
+
+#menu li a{
+    display: block;
+    padding: 8px;
+    color: rgba(255, 255, 255, 0.7);
+    border-bottom: 1px solid #262626;
+    font-size: 16px;
+}
+
+#menu li a:hover{
+    background-color: #9CB3C5;
+}
+
+#content{
+    margin-left: 220px;
+    position: relative;
+    left: 0;
+}
+
+#content .header{
+    height: 45px;
+    line-height: 45px;
+    padding-left: 50px;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    background-color: #759AB0;
+}
+
+#content .header h1{
+    margin: 0;
+}
+
+#content .text{
+    padding: 10px 20px;
+}
+
+.toggler{
+    display: none;
+    cursor: pointer;
+    width: 26px;
+    height: 16px;
+    padding: 14px 8px;
+    position: absolute;
+    top: 0;
+    border-right: solid 1px #1a1a1a;
+    left: 0;
+}
+
+.toggler:hover{
+    background-color: #9CB3C5;
+}
+
+.toggler span{
+    display: block;
+    height: 2px;
+    background-color: #fff;
+    margin-bottom: 4px;
+}
+
+@media screen and (max-width: 48em){
+    .toggler{
+        display: block;
+    }
+
+    #menu{
+        left: -220px;
+    }
+
+    #content{
+        margin-left: 0;
+    }
+
+    .visible #menu{
+        left: 0px;
+    }
+
+    .visible #content{
+        left: 220px;
+    }
+}
