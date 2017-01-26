@@ -1,0 +1,24 @@
+
+
+
+.right, .logo img, #slide4 {
+		display: none;
+	}
+	.content {
+		width: 100%;
+	}
+	.left {
+		width: 86%;
+		margin: 0 5%;
+		padding: 2%;
+	}
+	
+.logo p{
+    font-size: 1.8em;
+    padding-top: 0px; 
+}
+
+	#slide1, #slide2, #slide3 {
+		width: 33.33333333%;
+	}
+}

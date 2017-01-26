@@ -1,0 +1,39 @@
+
+	
+	.slides div {
+		background: none;
+		width: 100%;
+		height: auto;
+	}
+	
+	.slides div div.desc {
+		background: rgba(0,0,0,.5);
+		transform: none;
+		margin-top: 1%;
+		padding: 3% 0 0 0;
+		font-size: 1.4em;
+	}
+	
+.logo p{
+    font-size: 1.5em;
+    padding-top: 0px; 
+}
+
+	#slide3, #slide4 ,.logo img { display: none; }
+	
+	#slide1, #slide2 {
+        width: 50%
+    }
+
+	.content {
+		width: 100%;
+	}
+
+	.left {
+		width: 96%;
+		padding: 2%;
+	}
+	
+	.right {
+		width: auto;
+	}
